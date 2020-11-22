@@ -1,5 +1,46 @@
 # Getting Started with Create React App
 
+## Command Line
+create-react-app deploy-test
+
+cd deploy-test
+
+npm start                       
+
+npm install gh-pages --save-dev
+
+## Create new site on github
+https://github.com/new          
+
+deploy-test
+
+## Copy cone name
+https://github.com/ScaledFlow/deploy-test.git
+
+## Command Line
+git remote add origin https://github.com/ScaledFlow/deploy-test.git
+
+## Add to package.json
+"homepage": "http://github_ScaledFlow.github.io/deploy-test",
+
+"predeploy": "npm run build",
+
+"deploy": "gh-pages -d build"
+
+## Command Line
+npm run deploy
+
+## Test
+https://scaledflow.github.io/deploy-test/
+
+## Deploy Code not Build
+git add .
+
+git commit -m 'initial deploy test'
+
+git push --set-upstream origin master
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
